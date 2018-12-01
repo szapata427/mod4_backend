@@ -1,0 +1,3 @@
+class MomentsController < ApplicationController
+
+end
