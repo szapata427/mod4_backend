@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 2018_12_01_192729) do
     t.text "description"
     t.datetime "date"
     t.string "location"
+    t.integer "User_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -28,6 +29,7 @@ ActiveRecord::Schema.define(version: 2018_12_01_192729) do
     t.string "title"
     t.text "comment"
     t.datetime "date"
+    t.integer "moment_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

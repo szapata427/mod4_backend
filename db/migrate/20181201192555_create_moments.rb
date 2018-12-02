@@ -5,6 +5,7 @@ class CreateMoments < ActiveRecord::Migration[5.2]
       t.text :description
       t.datetime :date
       t.string :location
+      t.integer :User_id
 
       t.timestamps
     end
