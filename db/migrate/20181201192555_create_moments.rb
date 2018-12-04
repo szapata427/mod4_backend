@@ -3,9 +3,9 @@ class CreateMoments < ActiveRecord::Migration[5.2]
     create_table :moments do |t|
       t.string :title
       t.text :description
-      t.datetime :date
+      t.date :date
       t.string :location
-      t.integer :User_id
+      t.integer :user_id
 
       t.timestamps
     end
