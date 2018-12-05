@@ -1,5 +1,9 @@
 class MomentsController < ApplicationController
 
+def show
+moment = Moment.find(params[:id])
+render json: moment
+end
 def index
 
   render json: Moment.all
@@ -12,11 +16,11 @@ render json: moment
 
 end
 
-# def destroy
-#   byebug
-#   moment = Moment.find(moment_params)
-#   moment.destroy
-# end
+def destroy
+  
+  moment = Moment.find(params[:id])
+  moment.destroy
+end
 
 private
 
