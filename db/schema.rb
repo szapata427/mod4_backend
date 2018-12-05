@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2018_12_01_192729) do
   create_table "moments", force: :cascade do |t|
     t.string "title"
     t.text "description"
-    t.date "date"
+    t.string "date"
     t.string "location"
     t.integer "user_id"
     t.datetime "created_at", null: false

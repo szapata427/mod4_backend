@@ -21,6 +21,6 @@ end
 private
 
 def picture_params
-  params.require(:picture).permit(:url, :id, :title, :comment, :date)
+  params.require(:picture).permit(:url, :id, :title, :comment, :date, :moment_id)
 end
 end
