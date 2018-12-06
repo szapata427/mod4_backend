@@ -9,6 +9,16 @@ def show
 
 end
 
+def update
+
+picture = Picture.find(params[:id])
+picture.update(comment: params[:comment])
+
+render json: Picture.all
+
+
+end
+
 def create
   picture = Picture.create(picture_params)
   if picture.valid?
